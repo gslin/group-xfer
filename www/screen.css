@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: black;
+    color: white;
+    font-family: "º–∑¢≈È";
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 1.2em;
+    font-weight: normal;
+    letter-spacing: 3px;
+}
+
+.header {
+    background: #0000cc;
+    width: 100%;
+}
+
+.content {
+}
+
+.subject {
+    background: #eeeeee;
+    color: #0000cc;
+    padding: 0 10px;
+}
+
+.co {
+    padding-left: 5px;
+}
+
+.powered {
+    text-align: right;
+    color: red;
+    width: 100%;
+
+}

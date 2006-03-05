@@ -1,0 +1,4 @@
+AuthName Administration
+AuthType Basic
+AuthUserFile /home/wwwadm/data/admin/.htpasswd
+require valid-user
