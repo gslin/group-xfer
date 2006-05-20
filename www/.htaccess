@@ -1,6 +1,0 @@
-#
-RewriteEngine	on
-RewriteBase	/
-RewriteRule	^article/(.+)/(.+)$	/article.php?g=$1&n=$2	[L]
-RewriteRule	^article2/(.+)/(.+)$	/article2.php?g=$1&n=$2	[L]
-RewriteRule	^rss10/(.+)$		/rss10.php?g=$1		[L]
