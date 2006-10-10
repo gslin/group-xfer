@@ -15,7 +15,7 @@ do
   if (check_groupname_host($groupname, $host))
     break;
 
-  $hostname = $host . '.twbbs.org';
+  $hostname = $host . '.twbbs.org.tw';
   if (gethostbyname($hostname) == $hostname)
     break;
 
