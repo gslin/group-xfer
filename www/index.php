@@ -14,7 +14,9 @@
 
 <p>Group.NCTU.edu.tw 自 92 年七月發展至今，是目前台灣地區最大的 BBS 非公開 Newsgroups 轉信中心。</p>
 
-<p>您可以在 <a href="intro/">Group.NCTU.edu.tw 系統說明</a> 看到發展本系統的原因，以及系統的架構。或是利用右上角 <a href="https://group.nctu.edu.tw/login.php">Login</a> 的按鍵登入系統進行維護。如果您還沒申請 Group.NCTU.edu.tw 的帳號，請您使用右上角的 <a href="apply.php">Apply</a> 填寫您的電子郵件信箱及密碼。</p>
+<p>您可以在 <a href="intro/">Group.NCTU.edu.tw 系統說明</a> 看到發展本系統的原因，以及系統的架構。在 <a href="blog/">Blog</a> 裡則有系統維護資訊。</p>
+
+<p>或是利用右上角 <a href="https://group.nctu.edu.tw/login.php">Login</a> 的按鍵登入系統進行設定。如果您還沒申請 Group.NCTU.edu.tw 的帳號，請您使用右上角的 <a href="apply.php">Apply</a> 填寫您的電子郵件信箱及密碼。</p>
 
 <p>所有的連線過程都經過 SSL 加密傳送，這包括了您的帳號以及密碼。您可以在 <a href="http://certs.ipsca.com/sslcheck/servidorseguro.asp?numeroserie=05:1B:62:28:0C:57:FB:92:F6:27:24:3A:41:AF:7F:49:EE:DA:DA:35" target="_blank">ipsCA Certificate Validation Page</a> 看到相關的資訊。</p>
 
