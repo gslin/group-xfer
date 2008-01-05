@@ -46,7 +46,7 @@
     <p>請您先參考上方所描述的系統架構，請您申請 <code>twbbs.org</code> 的 Domain Name。申請以後，若使用者有設定您可以轉他的 Newsgroup，則 Newsgroup Name 為 <code>group.[<b>您的 twbbs.org 名稱</b>].[<b>使用者的群組名稱</b>]</code>。</p>
     <p>舉例來說，<code>Ptt.twbbs.org</code> 如果要轉 testboard 這個板，那麼他所要轉的 Groupname 則是：</p>
     <p><code>group.ptt.testboard</code></p>
-    <p>轉信的 News Server 為 <code>group.nctu.edu.tw</code>，二十四小時內的抓取次數請維持在 144 次以下。如果您的站轉超過 20 個 Newsgroups，您可以跟<a href="mailto:usenet@group.nctu.edu.tw">我們</a>聯絡，由 News Server 主動以 innfeed 餵信給您。</p>
+    <p>轉信的 News Server 為 <code>group.nctu.edu.tw</code>，二十四小時內的抓取次數請維持在 144 次以下。</p>
   </li>
 
   <li>
