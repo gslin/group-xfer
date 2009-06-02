@@ -31,14 +31,14 @@ use IO::Select;
 use Net::DNS;
 use strict;
 
-require('db.pl');
-
 my ($dbhost, $dbuser, $dbpass, $dbname);
 
 my $VERSION = '20090603';
 
 my %host;
 my $sel = undef;
+
+require('db.pl');
 
 &load_dbdata();
 &main();
