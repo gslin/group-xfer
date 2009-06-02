@@ -1,6 +1,6 @@
 #!/usr/bin/perl
 
-# Copyright (c) 2005-2006, Gea-Suan Lin.
+# Copyright (c) 2005-2009, Gea-Suan Lin.
 # All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
@@ -25,6 +25,7 @@
 # SUCH DAMAGE.
 
 use Carp;
+use Digest::MD5 qw/md5_hex/;
 use DBI;
 use IO::Select;
 use Net::DNS;
@@ -34,7 +35,7 @@ require('db.pl');
 
 my ($dbhost, $dbuser, $dbpass, $dbname);
 
-my $VERSION = '20050303';
+my $VERSION = '20090603';
 
 my %host;
 my $sel = undef;
@@ -127,9 +128,9 @@ sub main()
 
     # auth
     foreach my $h (keys(%host)) {
-	printf("auth \"news_%s\"\n{\n", $host{$h});
+	printf("auth \"news_%s\"\n{\n", md5_hex($host{$h}));
 	printf("\thosts:\t\t\"%s\"\n", $h);
-	printf("\tdefault:\t\"%s\"\n", $host{$h});
+	printf("\tdefault:\t\"%s\"\n", md5_hex($host{$h}));
 
 	print(<<EOF
 	default-domain:	"BBS"
@@ -161,8 +162,8 @@ EOF
 
     # access
     foreach my $h (keys(%host)) {
-	printf("access \"news_%s\"\n{\n", $host{$h});
-	printf("\tusers:\t\t\"%s\@BBS\"\n", $host{$h});
+	printf("access \"news_%s\"\n{\n", md5_hex($host{$h}));
+	printf("\tusers:\t\t\"%s\@BBS\"\n", md5_hex($host{$h}));
 	printf("\tnewsgroups:\t\"%s\"\n", join(',', map(sprintf('group.%s.*', $_), split(/_/, $host{$h}), 'public'), 'control.cancel'));
 
 	print(<<EOF
