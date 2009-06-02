@@ -15,8 +15,11 @@ do
   if (check_groupname_host($groupname, $host))
     break;
 
-  $hostname = $host . '.twbbs.org.tw';
+  $hostname = $host . '.twbbs.org';
   if (gethostbyname($hostname) == $hostname)
+    break;
+
+  if (gethostbyname($hostname) == gethostbyname('www.twbbs.org'))
     break;
 
   add_groupname_host($groupname, $host);
