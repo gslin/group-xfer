@@ -38,8 +38,6 @@ my $VERSION = '20090603';
 my %host;
 my $sel = undef;
 
-require('db.pl');
-
 &load_dbdata();
 &main();
 
@@ -107,6 +105,27 @@ sub do_query($)
 
     # check
     do_check(0.1);
+}
+
+sub load_dbdata()
+{
+    chdir($ENV{'HOME'}) if (defined($ENV{'HOME'}));
+
+    open(F, 'etc/dbdata.conf');
+
+    while (<F>) {
+	chomp();
+	next if (/^\s*$/ || /^#/);
+
+	if (/^(.+?)=(.*)$/) {
+	    $dbhost = $2 if ($1 eq 'dbhost');
+	    $dbuser = $2 if ($1 eq 'dbuser');
+	    $dbpass = $2 if ($1 eq 'dbpass');
+	    $dbname = $2 if ($1 eq 'dbname');
+	}
+    }
+
+    close(F);
 }
 
 sub main()
