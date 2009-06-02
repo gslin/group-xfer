@@ -51,7 +51,7 @@ $description = get_description($groupname);
 <table border="0">
 <tr>
 	<td>Add host:</td>
-	<td><input name="h" type="text" />.twbbs.org.tw</td>
+	<td><input name="h" type="text" />.twbbs.org</td>
 </tr>
 <tr>
 	<td></td>
