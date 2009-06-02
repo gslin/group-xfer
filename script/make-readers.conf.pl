@@ -163,7 +163,7 @@ EOF
     foreach my $h (keys(%host)) {
 	printf("access \"news_%s\"\n{\n", $host{$h});
 	printf("\tusers:\t\t\"%s\@BBS\"\n", $host{$h});
-	printf("\tnewsgroups:\t\"%s\"\n", join(',', map(sprintf('group.%s.*', $_), split(/_/, $host{$h}),'public'), 'control.cancel'));
+	printf("\tnewsgroups:\t\"%s\"\n", join(',', map(sprintf('group.%s.*', $_), split(/_/, $host{$h}), 'public'), 'control.cancel'));
 
 	print(<<EOF
 	access:		"R P"
