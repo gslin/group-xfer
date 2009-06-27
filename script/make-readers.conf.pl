@@ -183,7 +183,14 @@ EOF
     foreach my $h (keys(%host)) {
 	printf("access \"news_%s\"\n{\n", md5_hex($host{$h}));
 	printf("\tusers:\t\t\"%s\@BBS\"\n", md5_hex($host{$h}));
-	printf("\tnewsgroups:\t\"%s\"\n", join(',', map(sprintf('group.%s.*', $_), split(/_/, $host{$h}), 'public'), 'control.cancel'));
+
+	# Not good solution
+	my $ngs = join(',', map(sprintf('group.%s.*', $_), split(/_/, $host{$h}), 'public'), 'control.cancel');
+	if (length $ngs < 1024) {
+	    print("\tnewsgroups:\t\"$ngs\"\n");
+	} else {
+	    print("\tnewsgroups:\t\"\"\n");
+	}
 
 	print(<<EOF
 	access:		"R P"
