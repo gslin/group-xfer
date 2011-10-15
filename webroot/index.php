@@ -28,7 +28,7 @@
 
 <table border="0" width="100%">
 <tr>
-	<td align="left"><a href="http://www3.tw.freebsd.org/"><img alt="Powered by FreeBSD" border="0" src="powerlogo.gif" /></a></td>
+	<td align="left"><a href="http://www.tw.freebsd.org/"><img alt="Powered by FreeBSD" border="0" src="/static/powerlogo.gif" /></a></td>
 	<td align="right"><a href="http://validator.w3.org/check?uri=referer"><img alt="Valid XHTML 1.0!" border="0" src="/static/valid-xhtml10.png" height="31" width="88" /></a></td>
 </tr>
 </table>
