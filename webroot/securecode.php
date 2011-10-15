@@ -15,4 +15,3 @@ imagestring($im, 5, 4, 2, $securecode, $text_color);
 imagejpeg($im);
 imagedestroy($im);
 
-?>

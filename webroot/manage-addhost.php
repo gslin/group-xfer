@@ -27,4 +27,3 @@ do
 
 header('Location: manage-group.php?g=' . urlencode($groupname));
 
-?>

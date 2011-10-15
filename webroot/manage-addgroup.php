@@ -19,4 +19,3 @@ do
 
 header('Location: manage.php');
 
-?>

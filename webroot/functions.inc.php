@@ -229,4 +229,3 @@ function xml_normalize($str)
 	return $str;
 }
 
-?>

@@ -57,4 +57,3 @@ $xsltproc = xslt_create();
 xslt_set_encoding($xsltproc, 'UTF-8');
 print(xslt_process($xsltproc, 'arg:/_xml', "article.xsl", NULL, $arguments));
 
-?>
